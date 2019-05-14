@@ -1,0 +1,11 @@
+<b>This iframe is located on dev.jquery.com</b>
+<div id="test">Send me a message!</div>
+<script>
+document.addEventListener("message", function(e){
+        document.getElementById("test").textContent =
+                e.domain + " said: " + e.data;
+}, false);
+
+
+
+</script>
